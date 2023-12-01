@@ -4,54 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Бензожор</title>
-    <style>
-      .container {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        width: 240px;
-        height: 400px;
-        margin: 30px auto;
-        border: 3px solid black;
-        border-radius: 1em;
-        padding-left: 55px;
-      }
-      label {
-        display: block;
-        margin-top: 10px;
-      }
-      input {
-        margin-bottom: 5px;
-      }
-      button {
-        padding: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h2>Калькулятор автомобилиста</h2>
+
       <label for="distance">Расстояние км.</label>
       <input type="text" id="distance" placeholder="Расстояние в километрах" />
-      <label for="consumption">Расход топлива л/100км</label>
-      <input type="text" id="consumption" placeholder="Расход" /><label
-        for="fuelPrice"
-        >Стоимость одного литра</label
-      >
-      <input type="text" id="fuelPrice" placeholder="Цена литра" />
-      <button onclick="fuelCount()">Результат</button>
-      <p id="result"></p>
-    </div>
-    <script>
-      function fuelCount() {
-        var distance = parseFloat(document.getElementById("distance").value);
-        var consumption = parseFloat(
-          document.getElementById("consumption").value
-        );
-        var fuelPrice = parseFloat(document.getElementById("fuelPrice").value);
 
-        var summ = Math.round((distance / 100) * consumption * fuelPrice);
-        document.getElementById("result").innerHTML =
-          "Стоимость топлива: " + summ + " денег";
-      }
-    </script>
+      <label for="consumption">Расход топлива л/100км</label>
+      <input type="text" id="consumption" placeholder="Расход" />
+
+      <label for="fuelPrice">Стоимость одного литра</label>
+      <input type="text" id="fuelPrice" placeholder="Цена литра" />
+
+      <button onclick="fuelCount()">Результат</button>
+      <p class="end" id="result"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
