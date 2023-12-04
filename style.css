@@ -9,7 +9,7 @@ body {
   min-width: 260px;
   max-height: auto;
   min-height: 500px;
-  margin: 30px auto;
+  margin: 0 auto;
   border: 3px solid black;
   border-radius: 1em;
   padding: 50px;
