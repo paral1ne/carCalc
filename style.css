@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   border: 3px solid black;
   border-radius: 1em;
-  padding: 50px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
