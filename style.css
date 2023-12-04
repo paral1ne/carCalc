@@ -6,7 +6,7 @@ body {
   box-shadow: 5px 5px 10px black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   max-width: auto;
-  min-width: 260px;
+  min-width: 300px;
   max-height: auto;
   min-height: 500px;
   margin: 0 auto;
@@ -16,6 +16,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 label {
   margin-top: 10px;
@@ -42,4 +43,5 @@ button {
 .end {
   font-size: 1.5em;
   font-family: Georgia, serif;
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
+}
